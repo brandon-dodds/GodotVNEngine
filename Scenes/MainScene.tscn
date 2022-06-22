@@ -1,3 +1,13 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/ChangeBackground.gd" type="Script" id=2]
 
 [node name="MainScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+offset = Vector2( 640, 360 )
+scale = Vector2( 0.667, 0.667 )
+transform = Transform2D( 0.667, 0, 0, 0.667, 640, 360 )
+
+[node name="Background" type="Sprite" parent="CanvasLayer"]
+script = ExtResource( 2 )
