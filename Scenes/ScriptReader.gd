@@ -19,3 +19,4 @@ func _ready():
 	var result = regex.search(x)
 	if result:
 		print(result.get_string(1))
+		$CanvasLayer/Background.changeBackground(result.get_string(1))
